@@ -1,2 +1,6 @@
 # DjangoGirls-CodeCoachPreparation
 Preparation to coach at Django Girls Belgium
+
+### Curriculum 
+- [x] How the Internet Works
+
