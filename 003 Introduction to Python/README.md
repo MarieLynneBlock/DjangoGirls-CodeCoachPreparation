@@ -367,11 +367,8 @@ As you can see, the value of the key `'country'` has been altered from `'Belgium
 
 ## Compare things
 
-> For readers at home: this part is covered in the [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) video.
-
 A big part of programming involves comparing things. What's the easiest thing to compare? Numbers, of course. Let's see how that works:
 
-{% filename %}command-line{% endfilename %}
 ```python
 >>> 5 > 2
 True
@@ -385,13 +382,12 @@ True
 True
 ```
 
-We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare method results. Nice, huh?
+We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare method results.
 
 Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, __always__ need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
 
 Give Python two more tasks:
 
-{% filename %}command-line{% endfilename %}
 ```python
 >>> 6 >= 12 / 2
 True
@@ -406,9 +402,8 @@ We've seen `>` and `<`, but what do `>=` and `<=` mean? Read them like this:
 - x `<=` y means: x is less than or equal to y
 - x `>=` y means: x is greater than or equal to y
 
-Awesome! Wanna do one more? Try this:
+Try this:
 
-{% filename %}command-line{% endfilename %}
 ```python
 >>> 6 > 2 and 2 < 3
 True
@@ -425,7 +420,6 @@ You can give Python as many numbers to compare as you want, and it will give you
 
 Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
 
-{% filename %}{{ warning_icon }} command-line{% endfilename %}
 ```python
 >>> 1 > 'django'
 Traceback (most recent call last):
@@ -448,7 +442,6 @@ But for Python to understand this, you need to always write it as 'True' (first 
 
 Booleans can be variables, too! See here:
 
-{% filename %}command-line{% endfilename %}
 ```python
 >>> a = True
 >>> a
@@ -457,7 +450,6 @@ True
 
 You can also do it this way:
 
-{% filename %}command-line{% endfilename %}
 ```python
 >>> a = 2 > 5
 >>> a
@@ -471,12 +463,7 @@ Practice and have fun with Booleans by trying to run the following commands:
 - `True or 1 == 1`
 - `1 != 2`
 
-Congrats! Booleans are one of the coolest features in programming, and you just learned how to use them!
-
 # Save it!
-
-> For readers at home: this part is covered in the [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) video.
-
 
 So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language __interpreter__ or __compiler__. So far we've been running our programs one line at a time in the Python __interpreter__. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
 
@@ -487,7 +474,6 @@ So far we've been writing all our python code in the interpreter, which limits u
 
 To exit from the Python interpreter that we've been using, simply type the `exit()` function
 
-{% filename %}command-line{% endfilename %}
 ```python
 >>> exit()
 $
@@ -495,18 +481,15 @@ $
 
 This will put you back into the command prompt.
 
-Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file:
+In the code editor:
 
-{% filename %}editor{% endfilename %}
 ```python
-print('Hello, Django girls!')
+print('Hello, Django Girls!')
 ```
-
-Obviously, you're a pretty seasoned Python developer now, so feel free to write some code that you've learned today.
 
 Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in __.py__. The __.py__ extension tells our operating system that this is a **Python executable file** and Python can run it.
 
-> **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. This is called "syntax highlighting", and it's a really useful feature when coding. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor. :)
+> **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. This is called "syntax highlighting", and it's a really useful feature when coding. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor.
 
 
 With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
@@ -927,13 +910,8 @@ Note that the second of these two numbers is not included in the list that is ou
 
 ## Summary
 
-That's it. __You totally rock!__ This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
+For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language.
 
-For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
-
-You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
-
-### Summary
 
 - __the prompt__ – typing commands (code) into the Python prompt results in answers in Python
 - __numbers and strings__ – in Python numbers are used for math and strings for text objects
