@@ -2,7 +2,7 @@
 
 ## Python prompt
 
-We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
+Open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
 
 ```
 $ python3
@@ -17,107 +17,83 @@ After running the Python command, the prompt changed to `>>>`. For us this means
 
 If you want to exit the Python console at any point, just type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
 
-For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
+Let's start by typing some math, like `2 + 3` and hitting `enter`.
 
-{% filename %}command-line{% endfilename %}
 ```python
 >>> 2 + 3
 5
 ```
-
-Nice! See how the answer popped out? Python knows math! You could try other commands like:
+You could try other commands like:
 
 - `4 * 5`
 - `5 - 1`
 - `40 / 2`
 
 To perform exponential calculation, say 2 to the power 3, we type:
-{% filename %}command-line{% endfilename %}
+
 ```python
 >>> 2 ** 3
 8
 ```
 
-Have fun with this for a little while and then get back here. :)
-
-As you can see, Python is a great calculator. If you're wondering what else you can do…
-
 ## Strings
 
 How about your name? Type your first name in quotes like this:
 
-{% filename %}command-line{% endfilename %}
 ```python
->>> "Ola"
-'Ola'
+>>> "Lien"
+'Lien'
 ```
 
 You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
 
 Strings can be strung together. Try this:
 
-{% filename %}command-line{% endfilename %}
 ```python
->>> "Hi there " + "Ola"
-'Hi there Ola'
+>>> "Hi there " + "Lien"
+'Hi there Lien'
 ```
 
 You can also multiply strings with a number:
 
-{% filename %}command-line{% endfilename %}
 ```python
->>> "Ola" * 3
-'OlaOlaOla'
+>>> "Lien" * 3
+'LienLienLien'
 ```
 
 If you need to put an apostrophe inside your string, you have two ways to do it.
 
-Using double quotes:
+- Using double quotes:
 
-{% filename %}command-line{% endfilename %}
 ```python
 >>> "Runnin' down the hill"
 "Runnin' down the hill"
 ```
 
-or escaping the apostrophe with a backslash (`\`):
+- escaping the apostrophe with a backslash (`\`):
 
-{% filename %}command-line{% endfilename %}
 ```python
 >>> 'Runnin\' down the hill'
 "Runnin' down the hill"
 ```
 
-Nice, huh? To see your name in uppercase letters, simply type:
+To see your name in uppercase letters, simply type:
 
-{% filename %}command-line{% endfilename %}
 ```python
->>> "Ola".upper()
-'OLA'
+>>> "Lien".upper()
+'LIEN'
 ```
 
-You just used the `upper` __method__ on your string! A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
+You just used the `upper` __method__ on your string! A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Lien"`) once you call it.
 
 If you want to know the number of letters contained in your name, there is a __function__ for that too!
 
-{% filename %}command-line{% endfilename %}
 ```python
->>> len("Ola")
-3
+>>> len("Lien")
+4
 ```
 
-Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a __method__. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
-
-### Summary
-
-OK, enough of strings. So far you've learned about:
-
-- __the prompt__ – typing commands (code) into the Python prompt results in answers in Python
-- __numbers and strings__ – in Python numbers are used for math and strings for text objects
-- __operators__ – like `+` and `*`, combine values to produce a new one
-- __functions__ – like `upper()` and `len()`, perform actions on objects.
-
-These are the basics of every programming language you learn. Ready for something harder? We bet you are!
+Wonder why sometimes you call functions with a `.` at the end of a string (like `"Lien".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a __method__. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Lien"` as a parameter to the `len` function.
 
 ## Errors
 
@@ -996,3 +972,10 @@ That's it. __You totally rock!__ This was a tricky chapter, so you should feel p
 For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
 
 You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
+
+### Summary
+
+- __the prompt__ – typing commands (code) into the Python prompt results in answers in Python
+- __numbers and strings__ – in Python numbers are used for math and strings for text objects
+- __operators__ – like `+` and `*`, combine values to produce a new one
+- __functions__ – like `upper()` and `len()`, perform actions on objects.
