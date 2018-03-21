@@ -494,56 +494,35 @@ Now we need to save the file and give it a descriptive name. Let's call the file
 
 With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
 
-<!--sec data-title="Change directory: OS X" data-id="python_OSX"
-data-collapse=true ces-->
+- On a Mac, the command will look something like this:
 
-On a Mac, the command will look something like this:
-
-{% filename %}command-line{% endfilename %}
-```
-$ cd ~/Desktop
-```
-<!--endsec-->
-
-<!--sec data-title="Change directory: Linux" data-id="python_linux"
-data-collapse=true ces-->
-
-On Linux, it will be like this (the word "Desktop" might be translated to your local language):
-
-{% filename %}command-line{% endfilename %}
 ```
 $ cd ~/Desktop
 ```
 
-<!--endsec-->
+- On Linux, it will be like this (the word "Desktop" might be translated to your local language):
 
-<!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
+```
+$ cd ~/Desktop
+```
 
-On Windows Command Prompt, it will be like this:
+- On Windows Command Prompt, it will be like this:
 
-{% filename %}command-line{% endfilename %}
 ```
 > cd %HomePath%\Desktop
 ```
-<!--endsec-->
 
+- And on Windows Powershell, it will be like this:
 
-<!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
-
-And on Windows Powershell, it will be like this:
-
-{% filename %}command-line{% endfilename %}
 ```
 > cd $Home\Desktop
 ```
-<!--endsec-->
 
 
 If you get stuck, just ask for help.
 
 Now use Python to execute the code in the file like this:
 
-{% filename %}command-line{% endfilename %}
 ```
 $ python3 python_intro.py
 Hello, Django girls!
@@ -551,7 +530,6 @@ Hello, Django girls!
 
 Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
 
-{% filename %}command-line{% endfilename %}
 ```python
 > python python_intro.py
 ```
@@ -566,14 +544,12 @@ Lots of things in code should be executed only when given conditions are met. Th
 
 Replace the code in your **python_intro.py** file with this:
 
-{% filename %}python_intro.py{% endfilename %}
 ```python
 if 3 > 2:
 ```
 
 If we were to save and run this, we'd see an error like this:
 
-{% filename %}{{ warning_icon }} command-line{% endfilename %}
 ```
 $ python3 python_intro.py
 File "python_intro.py", line 2
@@ -593,7 +569,6 @@ Notice how we've indented the next line of code by 4 spaces? We need to do this 
 
 Save it and give it another run:
 
-{% filename %}command-line{% endfilename %}
 ```python
 $ python3 python_intro.py
 It works!
@@ -615,7 +590,6 @@ else:
 
 When this is run it will print out:
 
-{% filename %}command-line{% endfilename %}
 ```
 $ python3 python_intro.py
 5 is indeed greater than 2
@@ -636,7 +610,6 @@ else:
 
 and executed:
 
-{% filename %}command-line{% endfilename %}
 ```
 $ python3 python_intro.py
 Hey Sonja!
@@ -646,7 +619,6 @@ See what happened there? `elif` lets you add extra conditions that run if the pr
 
 You can add as many `elif` statements as you like after your initial `if` statement. For example:
 
-{% filename %}python_intro.py{% endfilename %}
 ```python
 volume = 57
 if volume < 20:
