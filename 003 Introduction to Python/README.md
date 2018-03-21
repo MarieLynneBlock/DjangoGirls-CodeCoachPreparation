@@ -97,21 +97,18 @@ Wonder why sometimes you call functions with a `.` at the end of a string (like 
 
 ## Errors
 
-Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
+Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
 
-{% filename %}{{ warning_icon }} command-line{% endfilename %}
 ```python
 >>> len(304023)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: object of type 'int' has no len()
 ```
-
-We got our first error! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Making mistakes (even intentional ones) are an important part of learning!
+We got our first error! Making mistakes (even intentional ones) are an important part of learning!
 
  It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
 
-{% filename %}command-line{% endfilename %}
 ```python
 >>> len(str(304023))
 6
@@ -130,41 +127,36 @@ An important concept in programming is variables. A variable is nothing more tha
 
 Let's say we want to create a new variable called `name`:
 
-{% filename %}command-line{% endfilename %}
 ```python
->>> name = "Ola"
+>>> name = "Lien"
 ```
 
-We type name equals Ola.
+We type name equals Lien.
 
-As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Simply enter `name` and hit `enter`:
+As you've noticed, your program didn't return anything like it did before (It stored it). So how do we know that the variable actually exists? Simply enter `name` and hit `enter`:
 
-{% filename %}command-line{% endfilename %}
 ```python
 >>> name
-'Ola'
+'Lien'
 ```
 
-Yippee! Your first variable! :) You can always change what it refers to:
+You can always change what it refers to:
 
-{% filename %}command-line{% endfilename %}
 ```python
->>> name = "Sonja"
+>>> name = "Imi"
 >>> name
-'Sonja'
+'Imi'
 ```
 
 You can use it in functions too:
 
-{% filename %}command-line{% endfilename %}
 ```python
 >>> len(name)
-5
+3
 ```
 
 Awesome, right? Of course, variables can be anything – numbers too! Try this:
 
-{% filename %}command-line{% endfilename %}
 ```python
 >>> a = 4
 >>> b = 6
@@ -174,7 +166,6 @@ Awesome, right? Of course, variables can be anything – numbers too! Try this:
 
 But what if we used the wrong name? Can you guess what would happen? Let's try!
 
-{% filename %}{{ warning_icon }} command-line{% endfilename %}
 ```python
 >>> city = "Tokyo"
 >>> ctiy
@@ -192,7 +183,6 @@ Play with this for a while and see what you can do!
 
 Try this:
 
-{% filename %}command-line{% endfilename %}
 ```python
 >>> name = 'Maria'
 >>> name
@@ -212,7 +202,6 @@ Beside strings and integers, Python has all sorts of different types of objects.
 
 Go ahead and create a list:
 
-{% filename %}command-line{% endfilename %}
 ```python
 >>> []
 []
@@ -220,14 +209,12 @@ Go ahead and create a list:
 
 Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
 
-{% filename %}command-line{% endfilename %}
 ```python
 >>> lottery = [3, 42, 12, 19, 30, 59]
 ```
 
 All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
 
-{% filename %}command-line{% endfilename %}
 ```python
 >>> len(lottery)
 6
@@ -235,14 +222,12 @@ All right, we have a list! What can we do with it? Let's see how many lottery nu
 
 Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we will sort it now:
 
-{% filename %}command-line{% endfilename %}
 ```python
 >>> lottery.sort()
 ```
 
 This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and see what happened:
 
-{% filename %}command-line{% endfilename %}
 ```python
 >>> print(lottery)
 [3, 12, 19, 30, 42, 59]
@@ -252,7 +237,6 @@ As you can see, the numbers in your list are now sorted from the lowest to highe
 
 Maybe we want to reverse that order? Let's do that!
 
-{% filename %}command-line{% endfilename %}
 ```python
 >>> lottery.reverse()
 >>> print(lottery)
@@ -261,7 +245,6 @@ Maybe we want to reverse that order? Let's do that!
 
 If you want to add something to your list, you can do this by typing this command:
 
-{% filename %}command-line{% endfilename %}
 ```python
 >>> lottery.append(199)
 >>> print(lottery)
@@ -270,7 +253,6 @@ If you want to add something to your list, you can do this by typing this comman
 
 If you want to show only the first number, you can do this by using __indexes__. An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
 
-{% filename %}command-line{% endfilename %}
 ```python
 >>> print(lottery[0])
 59
@@ -282,7 +264,6 @@ As you can see, you can access different objects in your list by using the list'
 
 To delete something from your list you will need to use __indexes__ as we learned above and the `pop()` method. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
 
-{% filename %}command-line{% endfilename %}
 ```python
 >>> print(lottery)
 [59, 42, 30, 19, 12, 3, 199]
@@ -302,46 +283,40 @@ You can find a list of all available list methods in this chapter of the Python 
 
 ## Dictionaries
 
-> For readers at home: this part is covered in the [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) video.
-
 A dictionary is similar to a list, but you access values by looking up a key instead of a numeric index. A key can be any string or number. The syntax to define an empty dictionary is:
 
-{% filename %}command-line{% endfilename %}
 ```python
 >>> {}
 {}
 ```
 
-This shows that you just created an empty dictionary. Hurray!
+This shows that you just created an empty dictionary.
 
 Now, try writing the following command (try substituting your own information, too):
 
-{% filename %}command-line{% endfilename %}
 ```python
->>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
+>>> coach = {'name': 'Lien', 'country': 'Belgium', 'favorite_numbers': [7, 31]}
 ```
 
-With this command, you just created a variable named `participant` with three key–value pairs:
+With this command, you just created a variable named `coach` with three key–value pairs:
 
-- The key `name` points to the value `'Ola'` (a `string` object),
-- `country` points to `'Poland'` (another `string`),
-- and `favorite_numbers` points to `[7, 42, 92]` (a `list` with three numbers in it).
+- The key `name` points to the value `'Lien'` (a `string` object),
+- `country` points to `'Belgium'` (another `string`),
+- and `favorite_numbers` points to `[7, 31]` (a `list` with three numbers in it).
 
 You can check the content of individual keys with this syntax:
 
-{% filename %}command-line{% endfilename %}
 ```python
->>> print(participant['name'])
-Ola
+>>> print(coach['name'])
+Lien
 ```
 
-See, it's similar to a list. But you don't need to remember the index – just the name.
+See, it's similar to a list. But you don't need to remember the index – just the name. (unordered)
 
 What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
 
-{% filename %}{{ warning_icon }} command-line{% endfilename %}
 ```python
->>> participant['age']
+>>> coach['age']
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 KeyError: 'age'
@@ -356,54 +331,39 @@ When should you use a dictionary or a list? Well, that's a good point to ponder.
 
 Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value pairs to a dictionary after it is created, like this:
 
-{% filename %}command-line{% endfilename %}
 ```python
->>> participant['favorite_language'] = 'Python'
+>>> coach['favorite_language'] = 'Python'
 ```
 
 Like lists, using the `len()` method on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
 
-{% filename %}command-line{% endfilename %}
 ```python
->>> len(participant)
+>>> len(coach)
 4
 ```
-
-I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
 
 You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, just type in the following command:
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> participant.pop('favorite_numbers')
-[7, 42, 92]
->>> participant
-{'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
+>>> coach.pop('favorite_numbers')
+[7, 31]
+>>> coach
+{'country': 'Belgium', 'favorite_language': 'Python', 'name': 'Lien'}
 ```
 
 As you can see from the output, the key–value pair corresponding to the 'favorite_numbers' key has been deleted.
 
 As well as this, you can also change a value associated with an already-created key in the dictionary. Type this:
 
-{% filename %}command-line{% endfilename %}
 ```python
->>> participant['country'] = 'Germany'
->>> participant
-{'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
+>>> coach['country'] = 'Germany'
+>>> coach
+{'country': 'Germany', 'favorite_language': 'Python', 'name': 'Lien'}
 ```
 
-As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
+As you can see, the value of the key `'country'` has been altered from `'Belgium'` to `'Germany'`.
 
-### Summary
-
-Awesome! You know a lot about programming now. In this last part you learned about:
-
-- __errors__ – you now know how to read and understand errors that show up if Python doesn't understand a command you've given it
-- __variables__ – names for objects that allow you to code more easily and to make your code more readable
-- __lists__ – lists of objects stored in a particular order
-- __dictionaries__ – objects stored as key–value pairs
-
-Excited for the next part? :)
 
 ## Compare things
 
@@ -979,3 +939,7 @@ You might want to briefly do something else – stretch, walk around for a bit, 
 - __numbers and strings__ – in Python numbers are used for math and strings for text objects
 - __operators__ – like `+` and `*`, combine values to produce a new one
 - __functions__ – like `upper()` and `len()`, perform actions on objects.
+- __errors__ – read and understand errors that show up if Python doesn't understand a command you've given it
+- __variables__ – names for objects that allow you to code more easily and to make your code more readable (store value)
+- __lists__ – lists of objects stored in a particular order
+- __dictionaries__ – objects stored as key–value pairs
