@@ -559,7 +559,7 @@ SyntaxError: unexpected EOF while parsing
 
 Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
 
-{% filename %}python_intro.py{% endfilename %}
+python_intro.py
 ```python
 if 3 > 2:
     print('It works!')
@@ -580,7 +580,7 @@ Note: Remember that on Windows, 'python3' is not recognized as a command. From n
 
 In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
 
-{% filename %}python_intro.py{% endfilename %}
+python_intro.py
 ```python
 if 5 > 2:
     print('5 is indeed greater than 2')
@@ -597,7 +597,7 @@ $ python3 python_intro.py
 
 If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
 
-{% filename %}python_intro.py{% endfilename %}
+python_intro.py
 ```python
 name = 'Sonja'
 if name == 'Ola':
@@ -637,7 +637,7 @@ else:
 
 Python runs through each test in sequence and prints:
 
-{% filename %}command-line{% endfilename %}
+command-line
 ```
 $ python3 python_intro.py
 Perfect, I can hear all the details
@@ -649,7 +649,7 @@ Comments are lines beginning with `#`. You can write whatever you want after the
 
 Let's see how that looks:
 
-{% filename %}python_intro.py{% endfilename %}
+python_intro.py
 ```python
 # Change the volume if it's too loud or too quiet
 if volume < 20 or volume > 80:
@@ -660,18 +660,6 @@ if volume < 20 or volume > 80:
 You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
 
 
-### Summary
-
-In the last few exercises you learned about:
-
-- __comparing things__ – in Python you can compare things by using `>`, `>=`, `==`, `<=`, `<` and the `and`, `or` operators
-- __Boolean__ – a type of object that can only have one of two values: `True` or `False`
-- __Saving files__ – storing code in files so you can execute larger programs.
-- __if … elif … else__ – statements that allow you to execute code only when certain conditions are met.
-- __comments__ - lines that Python won't run which let you document your code
-
-Time for the last part of this chapter!
-
 ## Your own functions!
 
 > For readers at home: this part is covered in the [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) video.
@@ -680,7 +668,7 @@ Remember functions like `len()` that you can execute in Python? Well, good news 
 
 A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
 
-{% filename %}python_intro.py{% endfilename %}
+python_intro.py
 ```python
 def hi():
     print('Hi there!')
@@ -893,3 +881,8 @@ For official and full python tutorial visit https://docs.python.org/3/tutorial/.
 - __variables__ – names for objects that allow you to code more easily and to make your code more readable (store value)
 - __lists__ – lists of objects stored in a particular order
 - __dictionaries__ – objects stored as key–value pairs
+- __comparing things__ – in Python you can compare things by using `>`, `>=`, `==`, `<=`, `<` and the `and`, `or` operators
+- __Boolean__ – type of object that can only have one of two values: `True` or `False`
+- __Saving files__ – storing code in files so you can execute larger programs
+- __if … elif … else__ – statements that allow you to execute code only when certain conditions are met
+- __comments__ - lines that Python won't run which let you document your code
