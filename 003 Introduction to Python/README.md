@@ -847,7 +847,7 @@ As you can see, everything you put inside a `for` statement with an indent will 
 
 You can also use `for` on numbers using the `range` function:
 
-{% filename %}python_intro.py{% endfilename %}
+python_intro.py
 ```python
 for i in range(1, 6):
     print(i)
@@ -855,7 +855,7 @@ for i in range(1, 6):
 
 Which would print:
 
-{% filename %}command-line{% endfilename %}
+command-line
 ```
 1
 2
